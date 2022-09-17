@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+
+
+    <style>
+      .back-button, .next-button {
+        margin-right: 15px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        font-size: 16px;
+      }
+
+      .next-button {
+        margin-left: 15px;
+        margin-right: 100px;
+      }
+
+      .link-button {
+        margin-right: 8px;
+        margin-left: 8px;
+        font-size: 20px;
+      }
+
+      .stretch-button {
+      background-color: rgb(12, 135, 12);
+      color: white;
+      border: none;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 8px;
+      padding-bottom:8px;
+      font-size: 18px;
+      cursor: pointer;
+      margin-right: 100px;
+      transition: padding-top 1s,
+      padding-bottom 1s,
+      padding-left 1s,
+      padding-right 1s;
+
+      }
+
+      .stretch-button:hover{
+        padding-top: 18px;
+        padding-bottom: 18px;
+        padding-left: 36px;
+        padding-right: 36px;
+      }
+
+      .shadow-button {
+       background-color: rgb(12, 135, 12);
+       color: white;
+       border: none;
+       padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 8px;
+      padding-bottom:8px;
+      font-size: 18px;
+      cursor: pointer;
+      margin-right: 20px;
+      box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.3);
+      }
+
+      .shadow-button:active {
+        margin-top: 3px;
+        margin-left: 3px;
+        box-shadow: none;
+      }
+
+      .stretch {
+      background-color: rgb(12, 135, 12);
+       color: white;
+       border: none;
+       padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 8px;
+      padding-bottom:8px;
+      font-size: 18px;
+      cursor: pointer;
+      margin-right: 10px;
+      margin-left: 10px;
+      transition: margin 1s, padding 1s;
+      }
+
+      .stretch:hover{
+        padding-right: 25px;
+        padding-left: 25px;
+        margin-left: 0px;
+        margin-right: 0px;
+      }
+
+      .search-button1 {
+        margin-top: 100px;
+        margin-left: 30px;
+        font-size: 16px;
+        border-radius: 8px;
+        border-color: gray;
+        border-style: solid;
+        border-width: 1px;
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-right: 40px;
+      }
+
+      .profile-picture{
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 25px;
+        vertical-align: middle;
+        margin-right: 15px;
+      }
+      
+      .text-box{
+        width: 300px;
+        border: none;
+        font-size: 18px;
+        vertical-align: middle;
+      }
+
+      .tweet-button {
+        background-color: rgb(49, 97, 255);
+        color: white;
+        border: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 12px;
+        padding-left: 12px;
+        border-radius: 18px;
+        font-weight: bold;
+        vertical-align: middle;
+      }
+
+.main-container{
+  background-color: lightpink;
+  display: grid;
+  grid-template-columns: 150px 150px 150px;
+  column-gap: 20px;
+  align-items: center;
+  
+}
+
+.cat-pic {
+  background-color: lightcoral;
+  align-items: center;
+ 
+}
+
+.cat-info {
+  background-color: aquamarine;
+ 
+
+}
+
+.follow-btn {
+  background-color: antiquewhite;
+}
+
+.kitty-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius:50px;
+  
+}
+
+      
+      
+      
+
+        </style>
+  </head>
+  <body>
+    <button class="back-button">Back</button>
+    <a class="link-button" href="http://www.amazon.com">1</a>
+    <a class="link-button" href="http://www.amazon.com">2</a>
+    <a class="link-button" href="http://www.amazon.com">3</a>
+    <a class="link-button" href="http://www.amazon.com">4</a>
+    <a class="link-button" href="http://www.amazon.com">5</a>
+    <button class="next-button">Next</button>
+  
+
+    <button class="stretch-button">
+    
+      Stretch
+
+    </button>
+
+    <button class="shadow-button">
+      Shadow
+    </button>
+
+    <button class="stretch">
+      one
+    </button>
+    <button class="stretch">
+      two
+     </button>
+    <button class="stretch">
+      three
+    </button>
+
+<input class="search-button1" type="text" placeholder="Search">
+<img class="profile-picture" src="https://images.news18.com/ibnlive/uploads/2022/07/cats-2-16571884213x2.png?impolicy=website&width=510&height=356" alt="">
+<input type="text" class="text-box" placeholder="What's happening?">
+<button class="tweet-button">Tweet</button>
+
+<div class="main-container">
+<div class="cat-pic">
+  <img class="kitty-img" src="https://images.news18.com/ibnlive/uploads/2022/07/cats-2-16571884213x2.png?impolicy=website&width=510&height=356" alt="">
+</div>
+<div class="cat-info">
+  <p>Oliver</p>
+  <div>
+    <p>the Cat</p>
+    <div>
+      <p>Popular</p>
+    </div>
+  </div> 
+</div>
+<div class="follow-btn">
+  <button>Follow</button>
+</div>
+</div>
+
+  
+ 
+  
+ 
+  
+    
+    <script src="" async defer></script>
+  </body>
+</html>
+  
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
